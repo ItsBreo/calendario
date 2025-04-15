@@ -1,0 +1,120 @@
+.stack-pane {
+    -fx-background-color: linear-gradient(to bottom, #1e1e1e, #2e2e2e);
+    /* css para páginas web */
+    background-color: linear-gradient(to bottom, #1e1e1e, #2e2e2e);
+}
+
+.root {
+    -fx-font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+    -fx-text-fill: #e0e0e0;
+    -fx-padding: 20;
+    -fx-background-color: linear-gradient(to bottom, #1e1e1e, #2e2e2e);
+
+    /* css para páginas web */
+    font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+    padding: 20;
+    background-color: linear-gradient(to bottom, #1e1e1e, #2e2e2e);
+}
+
+/* Etiquetas */
+.label {
+    -fx-text-fill: #cccccc;
+    -fx-font-size: 14px;
+    -fx-font-weight: 400;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-family: "Arial", "Verdana", "sans-serif"; 
+    -fx-font-weight: bold;  
+
+    /* css para páginas web */
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Arial", "Verdana", "sans-serif";
+}
+
+/* Campos de texto y contraseña */
+.text-field,
+.password-field {
+    -fx-background-color: #2b2b3d;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: transparent;
+    -fx-padding: 6 10;
+    -fx-font-family: "Arial", "Verdana", "sans-serif";
+    -fx-font-weight: bold;  
+
+    /* css para páginas web */
+    background-color: #2b2b3d;
+    font-size: 13px;
+    border-radius: 8px;
+    border-color: transparent;
+    padding: 6 10;
+    font-family: "Arial", "Verdana", "sans-serif";
+    font-weight: bold;
+
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #6c63ff;
+    -fx-border-width: 1.5;
+
+    /* css para páginas web */
+    border-color: #6c63ff;
+    border-width: 1.5;
+}
+
+/* Botón de iniciar sesión */
+.button {
+    -fx-background-color: linear-gradient(to right, #6c63ff, #3f3d9e);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-padding: 8 20;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    
+    /* css para páginas web */
+    background-color: linear-gradient(to right, #6c63ff, #3f3d9e);
+    font-weight: bold;
+    padding: 8 20;
+    font-size: 13px;
+    cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #7d78ff, #5856c0);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 6, 0.5, 0.0, 1.5);
+
+    /* css para páginas web */
+    background-color: linear-gradient(to right, #7d78ff, #5856c0);
+}
+
+/* Botón de registrarse */
+#registroBtn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #8a8aff;
+    -fx-font-size: 12px;
+    -fx-border-color: #8a8aff;
+    -fx-border-radius: 10px;
+    -fx-padding: 4 10;
+
+    /* css para páginas web */
+    background-color: transparent;
+    font-size: 12px;
+    border-color: #8a8aff;
+    border-radius: 10px;
+    padding: 4 10;
+}
+
+#registroBtn:hover {
+    -fx-background-color: #8a8aff;
+    -fx-text-fill: white;
+    
+    /* css para páginas web */
+    background-color: #8a8aff;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane stylesheets="@login.css" xmlns="http://javafx.com/javafx/24" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.calendar.controller.controllerLogin">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="Title" alignment="TOP_CENTER" layoutX="1.0" layoutY="29.0" prefHeight="18.0" prefWidth="600.0" text="Inicio de Sesion">
+               <font>
+                  <Font name="Noto Sans Georgian Condensed ExtraLight" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="1.0" layoutY="95.0" prefHeight="18.0" prefWidth="600.0" stylesheets="@login.css" text="Nombre de Usuario" />
+            <PasswordField fx:id="password" layoutX="220.0" layoutY="207.0" />
+            <TextField fx:id="username" layoutX="219.0" layoutY="130.0" />
+            <Label alignment="CENTER" layoutX="3.0" layoutY="182.0" prefHeight="18.0" prefWidth="600.0" text="Contraseña" />
+            <Label alignment="CENTER" layoutX="3.0" layoutY="358.0" prefHeight="18.0" prefWidth="600.0" text="¿No tienes cuenta?" />
+            <Button fx:id="callRegister" alignment="CENTER_RIGHT" layoutX="381.0" layoutY="354.0" mnemonicParsing="false" onAction="#openRegister" text="Registrate aqui" />
+            <Button fx:id="login" alignment="CENTER" layoutX="251.0" layoutY="264.0" mnemonicParsing="false" onAction="#login" text="¡Inicia sesion!" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

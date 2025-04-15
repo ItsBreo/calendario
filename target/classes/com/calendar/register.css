@@ -1,0 +1,108 @@
+/* Fondo de la pantalla */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #1e1e1e, #2e2e2e);
+
+    /* css para páginas web */
+    background-color: linear-gradient(to bottom, #1e1e1e, #2e2e2e);
+}
+
+/* Estilo común para etiquetas */
+.label {
+    -fx-text-fill: #cccccc;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Arial", "Verdana", "sans-serif";
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-margin-bottom: 10px; /* Espaciado uniforme entre etiquetas y campos de texto */
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+
+    /* css para páginas web */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Arial", "Verdana", "sans-serif";
+    margin-bottom: 10px;
+}
+
+/* Título principal */
+.label.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-margin-bottom: 20px; /* Mayor espaciado para el título */
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+
+    /* css para páginas web */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+/* Campos de texto */
+.text-field {
+    -fx-background-color: #2b2b3d;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: transparent;
+    -fx-padding: 6 10;
+    -fx-font-family: "Arial", "Verdana", "sans-serif";
+    -fx-font-weight: bold;
+    -fx-margin-bottom: 20px; /* Espaciado uniforme entre los campos */
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+
+    /* css para páginas web */
+    background-color: #2b2b3d;
+    font-size: 13px;
+    border-radius: 8px;
+    border-color: transparent;
+    padding: 6 10;
+    font-family: "Arial", "Verdana", "sans-serif";
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-field:focused {
+    -fx-border-color: #6c63ff;
+    -fx-border-width: 1.5;
+
+    /* css para páginas web */
+    border-color: #6c63ff;
+    border-width: 1.5;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to right, #6c63ff, #3f3d9e);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-padding: 8 20;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-min-width: 120px; /* Asegura que el botón tenga un tamaño mínimo */
+    -fx-max-width: 200px; /* Controla el tamaño máximo del botón */
+
+    /* css para páginas web */
+    background-color: linear-gradient(to right, #6c63ff, #3f3d9e);
+    font-weight: bold;
+    padding: 8 20;
+    font-size: 13px;
+    cursor: hand;
+    min-width: 120px;
+    max-width: 200px;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #7d78ff, #5856c0);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 6, 0.5, 0.0, 1.5);
+
+    /* css para páginas web */
+    background-color: linear-gradient(to right, #7d78ff, #5856c0);
+
+}
