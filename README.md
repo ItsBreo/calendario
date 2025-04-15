@@ -1,73 +1,40 @@
-# 🗓️ CalendarApp
+![Project Status](https://img.shields.io/badge/En%20desarrollo-%F0%9F%9A%A7-yellow)
 
-**CalendarApp** es una aplicación de escritorio desarrollada en **Java** utilizando **JavaFX** para la interfaz gráfica y **Maven** como herramienta de construcción. El proyecto permite a los usuarios **registrarse, iniciar sesión y gestionar recordatorios**, todo almacenado de forma local en un archivo JSON.
+![JSON](https://img.shields.io/badge/-JSON-000000?style=flat&logo=json&logoColor=white)
+![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white)
+![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3)
+![FXML](https://img.shields.io/badge/-FXML-14354C?style=flat&logo=java&logoColor=white)
 
----
+# 📆 CalendarApp
 
-## ✨ Características
-
-- ✅ Registro de nuevos usuarios con validación de campos obligatorios
-- ✅ Inicio de sesión con verificación de credenciales
-- ✅ Alerta visual para errores y confirmaciones (usando `Alert` de JavaFX)
-- ✅ Persistencia de datos en JSON usando Jackson
-- ✅ Interfaz moderna personalizada con CSS
-- ✅ Separación clara entre lógica, vista y modelo
-- ✅ Navegación entre pantallas (login → registro → login)
+**CalendarApp** es una aplicación de escritorio desarrollada en **Java** con **JavaFX**, diseñada para ofrecer una experiencia fluida y moderna en la gestión de recordatorios. Utiliza **Maven** como herramienta de construcción, y persiste los datos localmente en archivos **JSON**, garantizando un entorno totalmente offline.
 
 ---
 
-## 🧠 Tecnologías usadas
+## ✨ Características principales
 
-- Java 17+
-- JavaFX
-- Maven
-- Jackson (para manejo de JSON)
-- FXML + SceneBuilder
-- CSS personalizado para JavaFX
-
----
-
-## 📁 Estructura del proyecto
-
-├── pom.xml
-├── README.md
-├── src
-│   └── 📁 main
-│       ├── 📁 java
-│       │   ├── 📁 com
-│       │   │   └── 📁 calendar
-│       │   │       ├── 📁 controller
-│       │   │       │   ├── controllerCalendar.java
-│       │   │       │   ├── controllerLogin.java
-│       │   │       │   ├── controllerRegister.java
-│       │   │       │   ├── userService.java
-│       │   │       │   └── usersWrapper.java
-│       │   │       ├── MainApp.java📁
-│       │   │       ├── 📁 model
-│       │   │       │   ├── reminder.java
-│       │   │       │   └── users.java
-│       │   │       └── 📁 view
-│       │   │           ├── login.java
-│       │   │           └── register.java
-│       │   └── module-info.java
-│       └── 📁 resources
-│           └── 📁 com
-│               └── 📁 calendar
-│                   ├── calendar.css
-│                   ├── calendar.fxml
-│                   ├── 📁 data
-│                   │   └── users.json
-│                   ├── login.css
-│                   ├── login.fxml
-│                   ├── register.css
-│                   └── register.fxml
-
+- ✅ Registro de usuarios con validación de campos
+- ✅ Inicio de sesión seguro con verificación de credenciales
+- ✅ Alertas visuales informativas (errores, confirmaciones)
+- ✅ Persistencia local de datos mediante Jackson (JSON)
+- ✅ Interfaz gráfica estilizada con CSS personalizado
+- ✅ Navegación fluida entre pantallas (Login / Registro / Inicio)
+- ✅ Arquitectura clara basada en MVC (Modelo-Vista-Controlador)
 
 ---
 
-## 🗂️ Formato de datos JSON
+## 🧪 Tecnologías utilizadas
 
-Este es el formato básico del archivo `users.json`:
+- ☕ Java 17+
+- 🎨 JavaFX + FXML
+- 🧰 Maven
+- 📦 Jackson (Serialización JSON)
+- 🖌️ CSS personalizado
+- 🧱 SceneBuilder (diseño visual de interfaces)
+
+---
+
+## 🗃️ Formato del archivo `users.json`
 
 ```json
 {
@@ -86,3 +53,19 @@ Este es el formato básico del archivo `users.json`:
     }
   ]
 }
+
+```
+
+--- 
+## Licencia
+Este proyecto está licenciado bajo la [MIT License](LICENSE).
+
+
+## 🚧 Estado del proyecto
+
+- [x] Módulo de registro funcional  
+- [x] Validación de campos obligatorios  
+- [x] Persistencia en JSON  
+- [ ] Implementación de edición/eliminación de recordatorios  
+- [ ] Sistema de notificaciones programadas  
+- [ ] Mejora de experiencia visual (animaciones, responsividad)
